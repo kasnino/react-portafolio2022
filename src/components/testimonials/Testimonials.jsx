@@ -2,9 +2,9 @@ import React from 'react'
 import './testimonials.css'
 const Testimonials = () => {
     return (
-        <div className="testimonials">
+        <section id="testimonials" className="testimonials">
             <h1>Testimonials arrow</h1>
-        </div>
+        </section>
     )
 }
 
