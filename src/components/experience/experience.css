@@ -1,3 +1,50 @@
 .experience h1{
     color: aquamarine;
 }
+
+.container__experience{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 19px;
+    border: 1px solid red;
+    padding: 2rem 2rem 2rem; 
+      justify-content: center;
+    align-items: center;
+}
+
+.experience__contain{
+    display: grid;
+    grid-template-columns: 25% 25%;
+        padding: 1rem 2rem 0rem; 
+     justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.left__frontend{
+     border: 1px solid purple;
+     padding: 2rem 2rem 2rem; 
+}
+
+.right__frontend{
+     border: 1px solid purple;
+     padding: 2rem 2rem 2rem; 
+}
+
+@media screen and (max-width: 1024px){
+.container__experience{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem 2rem 2rem; 
+    }
+
+
+.experience__contain{
+    display: grid;
+    grid-template-columns: 1fr;
+        padding: 1rem 2rem 0rem; 
+     justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+}
