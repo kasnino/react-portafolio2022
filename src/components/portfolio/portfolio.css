@@ -1,3 +1,7 @@
 .portfolio h1 {
     color:coral;
 }
+
+.container__portfolio{
+    height: 100vh;
+}

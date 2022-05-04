@@ -8,17 +8,17 @@ import arrow from '../../assets/icons-outline-arrow-down-1.svg'
 
 const Header = () => {
     return (
-       <header className="App-header  container Header">
+       <header className="App-header container Header">
                 <h5 className="text-second">Hi! I'm</h5>
-                <h1 className="name-main">· Kristian · Serrano · </h1>
+                <h1 className="name-main">· Kristian · Serrano ·</h1>
                 <h5 className="text-second">Frontend ·· Developer</h5>
             <CTA/>
                 <div className="perfil-img">
                     <img src={avatar} alt="foto de perfil"/>
                 </div>
-                <a href="#contact" className="scroll-abajo">Scroll Down 
+                 <a href="#contact" className="scroll-abajo">Scroll Down 
                      <img src={arrow} alt="foto de perfil" width="45px"/>
-                </a>
+                 </a>
             <Redes/>
       </header>
     )

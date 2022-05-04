@@ -1,20 +1,32 @@
 import React from 'react'
 import './about.css'
-import me from '../../assets/bg-main.png'
-import home from '../../assets/icons-outline-award.svg'
-import plus from '../../assets/icons-solid-add-square.svg'
-function About() {
-  return (
-    <section id="about" className="About">
-        <h2 className="name-main">· About me · </h2>
+import { useState } from 'react'
+import home  from '../../assets/icons-outline-award.svg'
+import more  from '../../assets/icons-outline-more.svg'
+import plus  from '../../assets/icons-solid-add-square.svg'
+import fondo from '../../assets/carbon.svg'
+import check from '../../assets/check.png'
+import rostro from '../../assets/rostro.png'
+
+   const About = () => {
+          const [textoPerfil, setTextoPerfil] = useState([
+          "Hola! 👋  Soy desarrollador frontend [ ReactJS, VueJS ], apasionado por las animaciones & los UI effects. ",
+          "Me he enfocado en todo lo relacionado con la parte visual de una AppWeb, aprendiendo a dominar diferentes tecnologias.",
+          "Me gusta usar y crear animaciones [ CSS / Sass / keyframes 💯] darle vida a los diferentes elementos",
+          "Cuento con experiencia manipulando SVG animandolos segun los requerimientos."
+       ]);
+
+    return (
+    <section id="about" className="container__about">
+          <div className="container__title">
+                <h2 className="name-main">· About me · </h2>
+          </div>
             <div className="about__container">
-                
                 <div className="about__me">
                     <div className="about__me__img">
-                      <img src={me} alt="foto de perfil"/>
+                      <img src={rostro} alt="foto de perfil"/>
                     </div>
                 </div>
-
                 <div className="about__contenido">
                     <div className="about__cards">
                           <article className="about__card">
@@ -26,7 +38,7 @@ function About() {
                           <article className="about__card">
                           <img src={home} alt="foto de perfil"/>
                             <h3>Clientes</h3>
-                          <small>Contact</small>
+                            <img src={plus} width="15px" alt="foto de perfil"/><small>15</small>
                           </article>
 
                           <article className="about__card">
@@ -35,11 +47,17 @@ function About() {
                           <img src={plus} width="15px" alt="foto de perfil"/><small>15 Completados</small>
                           </article>
                     </div>
-                     <p className="about__info">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quibusdam et voluptatem non illum dolores eveniet ex officiis facere explicabo enim repudiandae labore atque nobis, omnis sed similique facilis praesentium?
-                     </p>
 
-                      <a className="btn-primary btn about__btn">Let's Talk</a>
+                     <p className="about__info">
+                      {textoPerfil.map( (item, index)  => (
+                          <li key={index}>
+                               <img src={check} alt="" className="checket__lista" width="10px"/>
+                               <span>{item}</span>
+                          </li>
+                        ))}
+                     </p>
+                      <a className="btn about__btn" href="#experience">Más Skills
+                      <img src={more} alt="" className="" width="20px"/></a>
                 </div>
 
             </div>

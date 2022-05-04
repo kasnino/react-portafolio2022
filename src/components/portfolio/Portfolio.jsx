@@ -1,12 +1,16 @@
 import React from 'react'
-import './portfolio.css'
-const Portfolio = () => {
+
+import { useState } from 'react'
+
+   const About = () => {
+
     return (
-        <section id="portfolio" className="portfolio">
-            <h1>Portfolio arrow</h1>
-        </section>
-   
-    )
+    <section id="about" className="About App-header">
+        <h2 className="name-main">· Portafolio · </h2>
+            <div className="about__container">
+            </div>
+   </section>
+  )
 }
 
-export default Portfolio
+export default About
