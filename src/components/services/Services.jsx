@@ -13,7 +13,7 @@ const Services = () => {
             <div className="container__card-services">
                 <article className="service">
                     <div className="service__head">
-                        <h1>UI Frontend</h1>
+                        <h3>UI Frontend</h3>
                     </div>
 
                     <ul className="services__list">
@@ -33,9 +33,34 @@ const Services = () => {
 
                 </article>
 
+                {/*fin del primer cards*/}
+
                 <article className="service">
                     <div className="service__head">
-                        <h1>UI Frontend</h1>
+                        <h3>Maquetacion</h3>
+                    </div>
+
+                    <ul className="services__list">
+                        <li>
+                        <BiCheck className="services__list-icon"/>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        </li>
+                        <li>
+                        <BiCheck className="services__list-icon"/>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        </li>
+                        <li>
+                        <BiCheck className="services__list-icon"/>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        </li>
+                    </ul>
+
+                </article>
+                {/*fin del segundo cards*/}
+
+                <article className="service">
+                    <div className="service__head">
+                        <h3>Conexion Backend</h3>
                     </div>
 
                     <ul className="services__list">
