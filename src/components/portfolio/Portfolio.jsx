@@ -26,14 +26,14 @@ import { SiGithub } from "react-icons/si";
                  <small> <h4 className="text__light--card">subtitulo</h4> </small>
                   </div>
                   <div className="link__portafolio--card">
-                    <span className="demo__projects">
+                    <a className="demo__projects">
                       <AiOutlinePlusCircle className="icono__plus" color="#d2d2d2" />
                       <p>Demo</p>
-                    </span>
-                   <span className="demo__projects">
+                    </a>
+                   <a className="demo__projects">
                       <SiGithub className="icono__plus" color="#d2d2d2" />
-                      <p>Code</p>
-                    </span>
+                      <p>Github</p>
+                    </a>
                   </div>
 
                   <div className="logos__tecnologias">
