@@ -49,12 +49,15 @@ header h1{
 }
 
 .perfil-img img{
-  width: 10em;
+  width: 12em;
   left: calc(50% - 11rem);
   margin-top: 4rem;
   border-radius: 50%;
   overflow: hidden;
   background-image: cover;
+  transition: var(--transition);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 
 .redes-sociales img{
@@ -85,4 +88,19 @@ header h1{
 
 .btn-icono{
   color: var(--color-bg);
+}
+
+@keyframes float {
+	0% {
+		transition: var(--transition);
+		transform: translatey(0px);
+	}
+	50% {
+	
+		transform: translatey(-20px);
+	}
+	100% {
+	
+		transform: translatey(0px);
+	}
 }

@@ -2,8 +2,10 @@ import React from 'react'
 import './testimonials.css'
 const Testimonials = () => {
     return (
-        <section id="testimonials" className="testimonials">
-            <h1>Testimonials arrow</h1>
+        <section id="testimonials" className=" App-header testimonials">
+         <div className="container__testimonials">
+        <h2 className="name-main">· Testimonials ·</h2>
+        </div>
         </section>
     )
 }

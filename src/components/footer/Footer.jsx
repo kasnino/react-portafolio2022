@@ -3,7 +3,9 @@ import './footer.css'
 const Footer = () => {
     return (
         <div className="Footer App-header">
-            <h1>Footer arrow</h1>
+              <div className="container__footer">
+                <h2 className="name-main">· Footer · </h2>
+            </div>
         </div>
     )
 }

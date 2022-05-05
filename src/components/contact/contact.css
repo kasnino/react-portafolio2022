@@ -1,3 +1,11 @@
 .Contact h1 {
     color:orange;
 }
+
+
+.container__contact
+{
+    padding: 7rem 0rem 0rem 0rem;
+    justify-content: center;
+    align-items: center;
+}

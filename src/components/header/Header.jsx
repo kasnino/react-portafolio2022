@@ -4,7 +4,7 @@ import CTA from './CTA'
 import Redes from './headerSociales.jsx'
 import avatar from '../../assets/avatar-empty.png'
 import arrow from '../../assets/icons-outline-arrow-down-1.svg'
-
+import rostro from '../../assets/rostro.png'
 
 const Header = () => {
     return (
@@ -14,11 +14,11 @@ const Header = () => {
                 <h5 className="text-second">Frontend ·· Developer</h5>
             <CTA/>
                 <div className="perfil-img">
-                    <img src={avatar} alt="foto de perfil"/>
+                    <img src={rostro} alt="foto de perfil"/>
                 </div>
-                 <a href="#contact" className="scroll-abajo">Scroll Down 
-                     <img src={arrow} alt="foto de perfil" width="45px"/>
-                 </a>
+                <a href="#contact" className="scroll-abajo">Scroll Down 
+                   <img src={arrow} alt="foto de perfil" width="45px"/>
+                </a>
             <Redes/>
       </header>
     )

@@ -1,3 +1,10 @@
 .Footer h1 {
     color:greenyellow;
 }
+
+.container__footer
+{
+    padding: 7rem 0rem 0rem 0rem;
+    justify-content: center;
+    align-items: center;
+}

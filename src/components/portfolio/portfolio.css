@@ -22,12 +22,6 @@
     justify-content:center;
 }
 
-.demo__projects{
-   
-   
-    
-}
-
 .demo__projects:hover{
     color: var(--color-primary);
 }
@@ -46,6 +40,13 @@
     line-height: 25px;
     padding: 2rem 0rem 0rem 0rem;
 }
+
+.body__portafolio--card h4{
+    color:#7fffd4; 
+}
+
+
+
 
 .link__portafolio--card
 {
@@ -74,16 +75,20 @@
     
 }
 
+.empresa__portafolio{
+    color:#dddedf;
+}
+
 .icono__plus{
     position: absolute;
     font-size: 28px;
     left: 2px;
-    top: 2px;
+    top: 3px;
 }
 
 .demo__projects p{
     position: absolute;
-    right: 5px;
+    right: 9px;
     top: 3px;
 }
 
@@ -92,17 +97,26 @@
     grid-template-columns: repeat(5, 10%);
     justify-content:center;
     align-items: center;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 1rem 0rem 1rem 0.5rem;
+    text-align: center;
+    width:100%;
+    
+   
 }
 .logos__tecnologias img{
-    width:30px;
-    height:30px;
-    border: 1px solid var(--color-light);
+    width:38px;
+    height:38px;
+    border: 2px solid var(--color-primary-variant);
     border-radius: 50%;
-  
+    margin: 0.3rem 0.2rem 0rem 0.4rem;
+    background:var(--color-bg);
+    background-image: contain;
    
 }
 
+.logos__tecnologias img:hover{
+    border: 2px dashed var(--color-primary);
+}
 @media screen and (max-width: 640px)
 {
     .body__container--portafolio{
@@ -121,19 +135,25 @@
         var(--color-primary-variant),
         transparent
       );
-    border-radius: 1rem;
+      	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      border-radius: 1.5rem;
     
 }
 
 .container__card--portafolio:hover{
     background:var(--color-bg); 
-    border: 1px dashed var(--color-primary);
+   
 }
 
+
+.head__portafolio--img{
+    
+}
 .card__img{
     width:100%;
     height: 200px;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
+   
     
 }
 
