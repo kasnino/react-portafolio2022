@@ -19,7 +19,7 @@ const Services = () => {
                     <ul className="services__list">
                         <li>
                         <BiCheck className="services__list-icon"/>
-                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>Uso diferentes componentes UI</p>
                         </li>
                         <li>
                         <BiCheck className="services__list-icon"/>
@@ -43,15 +43,19 @@ const Services = () => {
                     <ul className="services__list">
                         <li>
                         <BiCheck className="services__list-icon"/>
-                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>Manejo avanzado de Css</p>
                         </li>
                         <li>
                         <BiCheck className="services__list-icon"/>
-                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>Maquetando diseños siguiendo las buenas practicas  </p>
                         </li>
                         <li>
                         <BiCheck className="services__list-icon"/>
-                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>XD - PSD - FIGMA - SKETCH a codigo dinamico</p>
+                        </li>
+                        <li>
+                        <BiCheck className="services__list-icon"/>
+                        <p>XD - PSD - FIGMA - SKETCH a codigo dinamico</p>
                         </li>
                     </ul>
 
@@ -66,15 +70,15 @@ const Services = () => {
                     <ul className="services__list">
                         <li>
                         <BiCheck className="services__list-icon"/>
-                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>Realizo Peticiones al servidor</p>
                         </li>
                         <li>
                         <BiCheck className="services__list-icon"/>
-                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>Get - Post -  Delete  - Put</p>
                         </li>
                         <li>
                         <BiCheck className="services__list-icon"/>
-                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>Validando la DATA antes de mostrarla en el DOM</p>
                         </li>
                     </ul>
 

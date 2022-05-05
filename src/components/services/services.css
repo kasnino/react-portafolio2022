@@ -36,7 +36,7 @@
 
  .container__card-services .service{
   
-    margin: 1rem auto 0rem;
+    margin: 1rem  2rem;
     position:relative;
     border-bottom-left-radius: 1.7rem;
     border-bottom-right-radius: 1.7rem;
@@ -63,22 +63,24 @@
 
 .services__list li .services__list-icon{
     margin: 0.3rem 1rem 0rem 1rem;
-   
+   color:#F02478;
  
 }
 
-.service::after
+@media screen and (max-width: 640px)
 {
-    content:'';
-    position: absolute;
-    background-image: url(../../assets/flecha-curva-con-linea-discontinua.svg);
-    background-size: cover;
-    width: 100px;
-    height: 100px;
-    top: 20%;
-    right: -26%;
+   .service:nth-child(-n+2)::after
+   {
+       content:'';
+       position: absolute;
+       background-image: url(../../assets/flecha-curva-con-linea-discontinua.svg);
+       background-size: cover;
+       width: 100px;
+       height: 100px;
+       top: 20%;
+       right: -20%;
+   }
 }
-
 
  @media screen and (max-width: 1024px){
     .container__card-services{
@@ -93,4 +95,5 @@
         margin: 2rem auto 4rem;
      
      }
+     
  }

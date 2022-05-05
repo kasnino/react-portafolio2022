@@ -50,6 +50,11 @@ const experience = () => {
                         <h4>Css&nbsp;-&nbsp;Sass</h4>
                         <small className="text-light">Experienced</small>
                         </article>
+                        <article className="experience__details">
+                         <BsPatchCheckFill color="#d2d2d2"/>
+                        <h4>Wordpress</h4>
+                        <small className="text-light">Experienced</small>
+                        </article>
                      </div>
                  </div>
                  <div className="right__frontend">
@@ -61,7 +66,7 @@ const experience = () => {
                         </article>
                          <article className="experience__decriptions__details">
                          <BsAsterisk color="#d2d2d2"/>
-                         <span className="text-light">Uso de Diferentes framewors de Styles </span>
+                         <span className="text-light">Uso de Diferentes frameworks de Styles </span>
                         </article>
                         <article className="experience__decriptions__details">
                          <BsAsterisk color="#d2d2d2"/>
