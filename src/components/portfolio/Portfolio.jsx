@@ -46,24 +46,24 @@ import icon from '../../assets/tecnologi/css.svg'
 
                   <div className="body__portafolio--card">
                  <h4 className="">· {item.title} ·</h4> 
-              <small> <h5 className="text__light--card">{item.subtitle} / 
-              <strong className="empresa__portafolio">{item.empresa}</strong></h5> </small>
-                  </div>
-                  <div className="link__portafolio--card">
-                    <a href={item.link} target="_blank" className="demo__projects">
-                      <AiOutlinePlusCircle className="icono__plus" color="#d2d2d2" />
-                      <p>Demo</p>
-                    </a>
-                   <a className="demo__projects">
-                      <SiGithub className="icono__plus" color="#d2d2d2" />
-                      <p>Github</p>
-                    </a>
-                  </div>
-                  <div className="logos__tecnologias">
-                     { item.tecnologiaImg.map( (image, index)  => (
-                       <img className="" key={index} src={`../../src/assets/tecnologi/${image}`} alt=""/>
-                     ))}
-                  </div>
+                  <small> <h5 className="text__light--card">{item.subtitle} / 
+                  <strong className="empresa__portafolio">{item.empresa}</strong></h5> </small>
+                      </div>
+                      <div className="link__portafolio--card">
+                        <a href={item.link} target="_blank" className="demo__projects">
+                          <AiOutlinePlusCircle className="icono__plus" color="#d2d2d2" />
+                          <p>Demo</p>
+                        </a>
+                      <a className="demo__projects">
+                          <SiGithub className="icono__plus" color="#d2d2d2" />
+                          <p>Github</p>
+                        </a>
+                      </div>
+                      <div className="logos__tecnologias">
+                        { item.tecnologiaImg.map( (image, index)  => (
+                          <img className="" key={index} src={`./tecnologi/${image}`} alt=""/>
+                        ))}
+                      </div>  
                 </article> ))}
             </div>
    </section>
