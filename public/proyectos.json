@@ -1,21 +1,6 @@
 {
     "projects": [
-        {
-            "empresa": "Dashboard",
-            "title": "Bootstrap",
-            "subtitle": "Maquetar",
-            "tecnologiaImg": [
-                "Bootstrap_(front-end_framework)-Logo.wine.svg",
-                "sass-1.svg",
-                "GitHub-Logo.wine.png",
-                "javascript-seeklogocom.svg",
-                "css.svg"
-            ],
-            "icon": "school",
-            "link": "https://boukii-school-demo.netlify.app/index.html",
-            "logo": "wrapped-bitcoin-wbtc-logo.svg",
-            "ruta": "http://imgfz.com/i/NstCHWL.png"
-        },
+      
         {
             "empresa": "Cryptonumbres",
             "title": "NFT maquetacion",
@@ -64,6 +49,22 @@
             "link": "http://demos.dominioestudio.info/ibraco/libro1/unidad3/#/unidad3/0",
             "logo": "Vue.js-Logo.wine.png",
             "ruta": "http://imgfz.com/i/0GDcB5v.png"
+        },
+        {
+            "empresa": "Dashboard",
+            "title": "Bootstrap",
+            "subtitle": "Maquetar",
+            "tecnologiaImg": [
+                "Bootstrap_(front-end_framework)-Logo.wine.svg",
+                "sass-1.svg",
+                "GitHub-Logo.wine.png",
+                "javascript-seeklogocom.svg",
+                "css.svg"
+            ],
+            "icon": "school",
+            "link": "https://boukii-school-demo.netlify.app/index.html",
+            "logo": "wrapped-bitcoin-wbtc-logo.svg",
+            "ruta": "http://imgfz.com/i/NstCHWL.png"
         },
         {
             "empresa": "Portafolio 2022",
