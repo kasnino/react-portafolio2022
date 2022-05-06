@@ -32,7 +32,7 @@ import icon from '../../assets/tecnologi/css.svg'
 
   //  const [proyectos, setProyectos] = useState(['1','2','3','4','1','2','3','4'])
     return (
-    <section id="about" className="container__portafolio">
+    <section id="portfolio" className="container__portafolio">
         <h5>My recent Work</h5>
        <div className="container__title">
         <h2 className="name-main">· Portafolio ·</h2>
@@ -46,7 +46,8 @@ import icon from '../../assets/tecnologi/css.svg'
 
                   <div className="body__portafolio--card">
                  <h4 className="">· {item.title} ·</h4> 
-              <small> <h5 className="text__light--card">{item.subtitle} / <strong className="empresa__portafolio">{item.empresa}</strong></h5> </small>
+              <small> <h5 className="text__light--card">{item.subtitle} / 
+              <strong className="empresa__portafolio">{item.empresa}</strong></h5> </small>
                   </div>
                   <div className="link__portafolio--card">
                     <a href={item.link} target="_blank" className="demo__projects">
