@@ -17,6 +17,23 @@
             "ruta": "http://imgfz.com/i/NstCHWL.png"
         },
         {
+            "empresa": "Cryptonumbres",
+            "title": "NFT maquetacion",
+            "subtitle": "Maquetar",
+            "tecnologiaImg": [
+                "Vue.js-Logo.wine.png",
+                "vuetify.svg",
+                "sass-1.svg",
+                "GitHub-Logo.wine.png",
+                "javascript-seeklogocom.svg",
+                "css.svg"
+            ],
+            "icon": "school",
+            "link": "http://annoyed-deer.surge.sh/",
+            "logo": "wrapped-bitcoin-wbtc-logo.svg",
+            "ruta": "http://imgfz.com/i/0hudm8w.png"
+        },
+        {
             "empresa": "Tailwinds Vuejs",
             "title": "Login-Logout",
             "subtitle": "Maquetacion",
@@ -60,7 +77,7 @@
                 "GitHub-Logo.wine.png"
             ],
             "icon": "school",
-            "link": "http://unbiased-map.surge.sh/portada",
+            "link": "https://kriatian-serrano-portafolio.netlify.app/",
             "logo": "wrapped-bitcoin-wbtc-logo.svg",
             "ruta": "http://imgfz.com/i/CWUBmZ2.png"
         },
@@ -237,7 +254,7 @@
         {
             "empresa": "Email Marketing",
             "title": "Newsletter",
-            "subtitle": "Maquetacion Email Newsletter",
+            "subtitle": "Maquetacion",
             "tecnologiaImg": [
                 "css.svg"
             ],
