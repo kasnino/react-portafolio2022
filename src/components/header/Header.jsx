@@ -14,6 +14,16 @@ const Header = () => {
                 <h5 className="text-second">Frontend ·· Developer</h5>
             <CTA/>
                 <div className="perfil-img">
+                     <div className='hover-show'>
+                        <span className='circle'></span>
+                        <span className='circle'></span>
+                        <span className='circle'></span>
+                        <span className='circle'></span>
+                        <span className='circle'></span>
+                        <span className='circle'></span>
+                        <span className='circle'></span>
+                        <span className='circle'></span>
+                    </div>
                     <img src={rostro} alt="foto de perfil"/>
                 </div>
                 <a href="#contact" className="scroll-abajo">Scroll Down 

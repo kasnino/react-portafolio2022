@@ -50,14 +50,24 @@ header h1{
 
 .perfil-img img{
   width: 12em;
-  left: calc(50% - 11rem);
-  margin-top: 4rem;
+  left: calc(50% - 9rem);
+  margin-top: 6rem;
   border-radius: 50%;
   overflow: hidden;
   background-image: cover;
   transition: var(--transition);
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+  top: -50px;
+  transform: translateY(200px);
+  left: 5%;
+}
+
+@keyframes fade-in {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 
 .redes-sociales img{
@@ -90,17 +100,169 @@ header h1{
   color: var(--color-bg);
 }
 
+.perfil-img{
+  position: relative;
+  
+}
+.perfil-img .hover-show {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  cursor: pointer;
+}
+
+/* .perfil-img .hover-show:active {
+  animation: showspin 5s linear  infinite;
+} */
+
+
+@keyframes showspin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.perfil-img .hover-show .circle {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary-variant),
+    transparent
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  opacity: 0;
+}
+
+.perfil-img .hover-show{
+
+position: relative;
+}
+
+.perfil-img .hover-show:active .circle {
+  opacity: 1;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary-variant),
+    transparent
+  );
+  
+}
+
+.perfil-img .hover-show:active .circle:nth-child(1) {
+  background: url("../../assets/tecnologi/react_gris.svg");
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: translateX(-150%) translateY(-150%);
+
+}
+.perfil-img .hover-show:active .circle:nth-child(2) {
+  position: absolute;
+  transform: translateX(150%) translateY(-150%);
+  background: url(../../assets/tecnologi/Vue.js-Logo.wine.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.perfil-img .hover-show:active  .circle:nth-child(3) {
+  position: absolute;
+  background: url(../../assets/tecnologi/js.svg);
+  transform: translateX(210%);
+    background-size: contain;
+    background-repeat: no-repeat;
+  background-position: center;
+}
+.perfil-img  .hover-show:active .circle:nth-child(4) {
+  position: absolute;
+  transform: translateX(150%) translateY(180%);
+  background: url(../../assets/tecnologi/vuetify.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.perfil-img .hover-show:active .circle:nth-child(5) {
+  position: absolute;
+  transform: translateY(220%);
+  background: url(../../assets/tecnologi/sass-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.perfil-img .hover-show:active .circle:nth-child(6) {
+  position: absolute;
+  transform: translateX(-180%) translateY(150%);
+  background: url(../../assets/tecnologi/GitHub-Logo.wine.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.perfil-img  .hover-show:active .circle:nth-child(7) {
+  position: absolute;
+  transform: translateX(-210%);
+  background: url(../../assets/tecnologi/javascript-seeklogocom.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 @keyframes float {
-	0% {
-		transition: var(--transition);
-		transform: translatey(0px);
-	}
-	50% {
-	
-		transform: translatey(-20px);
-	}
-	100% {
-	
-		transform: translatey(0px);
-	}
+    0% {
+      transition: var(--transition);
+      transform: translatey(0px);
+    }
+    50% {
+    
+      transform: translatey(-20px);
+    }
+    100% {
+    
+      transform: translatey(0px);
+    }
+}
+
+
+@media screen and (max-width: 1024px)
+{
+  .perfil-img .hover-show {
+ 
+    height: 300px;
+    width: 217px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+  }
+
+  .perfil-img img{
+    width: 12em;
+    left: calc(50% - 9rem);
+    margin-top: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: cover;
+    transition: var(--transition);
+    position: absolute;
+    animation: float 6s ease-in-out infinite;
+    top: -50px;
+    transform: translateY(200px);
+   
+  }
+  
 }

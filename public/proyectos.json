@@ -19,21 +19,22 @@
             "ruta": "http://imgfz.com/i/0hudm8w.png"
         },
         {
-            "empresa": "Tailwinds Vuejs",
-            "title": "Login-Logout",
-            "subtitle": "Maquetacion",
+            "empresa": "Reemp",
+            "title": "Reemp Dashboard",
+            "subtitle": "Dashboard",
             "tecnologiaImg": [
-                "Tailwind_CSS_Logo.png",
+                "Vue.js-Logo.wine.png",
+                "vuetify.svg",
                 "sass-1.svg",
-                "GitHub-Logo.wine.png",
-                "javascript-seeklogocom.svg",
-                "css.svg"
+                "nuxtjs-icon.svg",
+                "GitHub-Logo.wine.png"
             ],
             "icon": "school",
-            "link": "https://graceful-starlight-321728.netlify.app/",
-            "logo": "wrapped-bitcoin-wbtc-logo.svg",
-            "ruta": "http://imgfz.com/i/e25EQVU.png"
+            "link": "http://well-off-nose.surge.sh/interfaz/dashboard/dashboard/",
+            "logo": "sass-1.svg",
+            "ruta": "http://imgfz.com/i/OPs1hxa.jpeg"
         },
+  
         {
             "empresa": "App /Elearnig ",
             "title": "App / Mobile",
@@ -49,6 +50,22 @@
             "link": "http://demos.dominioestudio.info/ibraco/libro1/unidad3/#/unidad3/0",
             "logo": "Vue.js-Logo.wine.png",
             "ruta": "http://imgfz.com/i/0GDcB5v.png"
+        },
+        {
+            "empresa": "Tailwinds Vuejs",
+            "title": "Login-Logout",
+            "subtitle": "Maquetacion",
+            "tecnologiaImg": [
+                "Tailwind_CSS_Logo.png",
+                "sass-1.svg",
+                "GitHub-Logo.wine.png",
+                "javascript-seeklogocom.svg",
+                "css.svg"
+            ],
+            "icon": "school",
+            "link": "https://graceful-starlight-321728.netlify.app/",
+            "logo": "wrapped-bitcoin-wbtc-logo.svg",
+            "ruta": "http://imgfz.com/i/e25EQVU.png"
         },
         {
             "empresa": "Dashboard",
@@ -82,22 +99,7 @@
             "logo": "wrapped-bitcoin-wbtc-logo.svg",
             "ruta": "http://imgfz.com/i/CWUBmZ2.png"
         },
-        {
-            "empresa": "Reemp",
-            "title": "Reemp Dashboard",
-            "subtitle": "Dashboard",
-            "tecnologiaImg": [
-                "Vue.js-Logo.wine.png",
-                "vuetify.svg",
-                "sass-1.svg",
-                "nuxtjs-icon.svg",
-                "GitHub-Logo.wine.png"
-            ],
-            "icon": "school",
-            "link": "http://well-off-nose.surge.sh/interfaz/dashboard/dashboard/",
-            "logo": "sass-1.svg",
-            "ruta": "http://imgfz.com/i/OPs1hxa.jpeg"
-        },
+     
         {
             "empresa": "Reemp",
             "title": "Formulario Complejo",
