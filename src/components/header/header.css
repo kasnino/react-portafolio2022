@@ -162,7 +162,7 @@ position: relative;
 }
 
 .perfil-img .hover-show:active .circle:nth-child(1) {
-  background: url("../../assets/tecnologi/react_gris.svg");
+  background: url("./tecnologi/react_gris.svg");
   background-size: contain;
   background-position: center;
   position: absolute;
@@ -173,14 +173,14 @@ position: relative;
 .perfil-img .hover-show:active .circle:nth-child(2) {
   position: absolute;
   transform: translateX(150%) translateY(-150%);
-  background: url(../../assets/tecnologi/Vue.js-Logo.wine.svg);
+  background: url(./tecnologi/Vue.js-Logo.wine.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .perfil-img .hover-show:active  .circle:nth-child(3) {
   position: absolute;
-  background: url(../../assets/tecnologi/js.svg);
+  background: url(./tecnologi/js.svg);
   transform: translateX(210%);
     background-size: contain;
     background-repeat: no-repeat;
@@ -189,7 +189,7 @@ position: relative;
 .perfil-img  .hover-show:active .circle:nth-child(4) {
   position: absolute;
   transform: translateX(150%) translateY(180%);
-  background: url(../../assets/tecnologi/vuetify.svg);
+  background: url(./tecnologi/vuetify.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -197,7 +197,7 @@ position: relative;
 .perfil-img .hover-show:active .circle:nth-child(5) {
   position: absolute;
   transform: translateY(220%);
-  background: url(../../assets/tecnologi/sass-1.svg);
+  background: url(./tecnologi/sass-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -205,7 +205,7 @@ position: relative;
 .perfil-img .hover-show:active .circle:nth-child(6) {
   position: absolute;
   transform: translateX(-180%) translateY(150%);
-  background: url(../../assets/tecnologi/GitHub-Logo.wine.svg);
+  background: url(./tecnologi/GitHub-Logo.wine.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -213,7 +213,7 @@ position: relative;
 .perfil-img  .hover-show:active .circle:nth-child(7) {
   position: absolute;
   transform: translateX(-210%);
-  background: url(../../assets/tecnologi/javascript-seeklogocom.svg);
+  background: url(./tecnologi/javascript-seeklogocom.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
