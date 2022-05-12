@@ -4,7 +4,6 @@ import { useState } from 'react'
 import home  from '../../assets/icons-outline-award.svg'
 import more  from '../../assets/icons-outline-more.svg'
 import plus  from '../../assets/icons-solid-add-square.svg'
-import fondo from '../../assets/carbon.svg'
 import check from '../../assets/check.png'
 import rostro from '../../assets/rostro.png'
 
