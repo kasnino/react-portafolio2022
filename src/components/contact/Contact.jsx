@@ -35,7 +35,7 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_tc1f5qc', 'template_cux9ajn', form.current, 'akjshdkahdkh')
+      emailjs.sendForm('service_tc1f5qc', 'template_cux9ajn', form.current, 'EqyiQ_qLXdi8v3bHT')
        
         .then((result) => {
             console.log("Enviandoo... "+result.text);
