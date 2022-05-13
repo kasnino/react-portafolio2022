@@ -102,7 +102,7 @@ import 'swiper/css/pagination';
             >
               { proyectos.map( (item, index)  => (
              
-                <SwiperSlide key={index} className="container__card--portafolio">
+                <SwiperSlide key={index} className="container__card--portafolio mini-card">
                   <div className="head__portafolio--img">
                     <img src={item.ruta} className="card__img" alt=""/>
                   </div>

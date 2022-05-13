@@ -64,7 +64,22 @@
 }
 
 
-
+.mini-card:focus-within~.mini-card, .mini-card:hover~.mini-card {
+    transform: translateX(80px) scale(0.8)  rotate(10deg);
+    transition: .2s;
+  
+}
+.mini-card:focus-within, .mini-card:hover {
+    transform: translateY(5px) scale(1.1)  rotate(0deg);
+    transition: .2s;
+   
+}
+.mini-card{
+      box-shadow: -0.7rem 0 1rem var(--shadown-card);
+      transition: .2s;
+      margin: 0;
+      cursor: pointer;
+  }
 
 .link__portafolio--card
 {
@@ -204,7 +219,8 @@
     }
 
     .container-main{
-        padding:0rem 1rem 1rem 1rem;
+        padding:0rem 4rem 2rem 2rem;
+        
     }
 
    
