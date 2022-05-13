@@ -80,8 +80,8 @@ const Contact = () => {
                     <div className="formulario__contact">
                         <form action="" ref={form} onSubmit={sendEmail}>
                             <input type="text" name="name" placeholder="Tú nombre" autoComplete="off" required/>
-                            <input type="email" name="email" placeholder="Tú email" autoComplete="nope" required  id=""/>
-                            <textarea name="message" id="" placeholder="Aqui puedes enviarme un message, llegara directamente a mi email.... 📨​" autoComplete="noe" rows="7"></textarea>
+                            <input type="email" name="email" placeholder="Tú email" autoComplete="nope" required  id="emailing"/>
+                            <textarea name="message" id="messade" placeholder="Aqui puedes enviarme un message, llegara directamente a mi email.... 📨​" autoComplete="noe" rows="7"></textarea>
                             <div className="btn__container--contact">
                             <button type="submit" className="btn__contact"> Enviar... <BiMailSend size="20"/></button>
                             </div>

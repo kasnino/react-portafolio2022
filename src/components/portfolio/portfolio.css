@@ -7,11 +7,24 @@
     padding: 7rem 2rem 2rem 2rem;
 }
 
+.container-main{
+    padding:7rem 2rem 2rem 2rem;
+}
+
+.swiper {
+    padding: 0rem 0rem 4rem 2rem !important;
+}
+
 .body__container--portafolio{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 6rem 2rem 0rem 0rem;
-    gap: 4rem 2.2rem;
+    padding-bottom: 6rem;
+    gap: 5rem 2.2rem;
+    
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-light) !important;
 }
 
 .title__portafolio{
@@ -28,6 +41,11 @@
 .demo__projects p{
     font-size: 15px;
    
+}
+
+.text--light{
+    padding: 5rem 2rem 2rem 2rem;
+    color: pink;
 }
 
 .text__light--card
@@ -115,6 +133,7 @@
 .logos__tecnologias img:hover{
     border: 2px dashed var(--color-primary);
 }
+
 @media screen and (max-width: 640px)
 {
     .body__container--portafolio{
@@ -135,6 +154,7 @@
       );
       box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
       border-radius: 1.5rem;
+      position: relative;
     
 }
 
@@ -153,6 +173,22 @@
     border-top-right-radius: 2.5rem; 
 }
 
+.container__footer--card{
+  
+   
+   color: var(--color-primary);
+    right:15px;
+    bottom:15px;
+    position: absolute;
+}
+
+.count__elementos{
+    color: var(--color-primary);
+    right:15px;
+    bottom:15px;
+    position: absolute;
+}
+
 @media screen and (max-width: 1024px)
 {
     .body__container--portafolio{
@@ -161,4 +197,16 @@
         gap: 4rem 2rem;
         padding: 5rem 2rem 2rem 2rem;
     }
+
+    .container__portafolio{
+        gap: 2rem;
+        padding: 0rem;
+    }
+
+    .container-main{
+        padding:0rem 1rem 1rem 1rem;
+    }
+
+   
+    
 }

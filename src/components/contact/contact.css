@@ -102,30 +102,23 @@ h5{
         width: 100%;
         grid-template-columns: 1fr;
         justify-content:center;
-        padding: 7rem 2rem 2rem 2rem;
-        
-    
+        padding: 2rem 2rem 2rem 2rem;
     }
 
     .contact__opcions{
         color: var(--color-light);
-        padding: 0.5rem 0.5rem 2rem 1rem;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        flex-direction: row;
-        display: inline-flex;
     }
 
     .contact__opcions > article {
         margin: 15px;
-      
       }
 
       .contact__opcions .contact__opction{
         background-color:#2c2c6c; 
          padding: 1.5rem 1rem 1rem 1rem;
          border-radius: 0.5rem;
-         width:50%;
-         
+         width:80%;
      }
 }

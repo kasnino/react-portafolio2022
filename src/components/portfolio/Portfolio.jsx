@@ -1,16 +1,68 @@
 import React from 'react'
 import './portfolio.css'
 import { useState, useEffect } from "react";
-import {AiOutlinePlusCircle} from 'react-icons/ai'
+import { AiOutlinePlusCircle} from 'react-icons/ai'
 import { SiGithub } from "react-icons/si";
-import plus  from '../../assets/quasar_icon_132057.svg'
-import fondo from '../../assets/Kanojo-mo-Kanojo_banner_znolv6.0b1e4ee1.jpg'
-import icon from '../../assets/tecnologi/css.svg'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
    const About = () => {
     const [proyectos, setProyectos] = useState([])
     const [isLoading, setLoading] = useState(true)
-    const  BASE_URL = './proyectos.json'
+    const [numCards, setnumCards] = useState(4)
+    const [windowWidth, SetWindowWidth] = useState(window.innerWidth)
+    const BASE_URL = './proyectos.json'
+  
+ 
+    useEffect(() => {
+        const handleResize = () =>  SetWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => {
+            console.log("return UssEffect");
+            window.removeEventListener('resize', handleResize);
+        }
+
+    },[])
+
+
+     {/*CREAR UNA FUNCION PARA SABER CUANDO 
+        ES MOBILE - DESKTOP - TABLET */}
+
+    {/*SE EJEUCAT LA PRIMERA VEz QUE CARGA EL COMPONENTES */}       
+            useEffect(() => {
+              updateResponsive();
+            },[windowWidth])
+
+            const updateResponsive = () => {
+              let isMobile = windowWidth < 660;
+              let isMediumTablet = windowWidth > 660;
+              let isTablet = windowWidth < 1025;
+              let isDesktop = windowWidth > 1024;
+
+              if(isMobile){
+                return setnumCards(1) 
+              }
+                if(isTablet && windowWidth > 769){
+                  return setnumCards(3)  
+                }
+
+                if(isMediumTablet && windowWidth < 769){
+                  return setnumCards(2)  
+                }
+                if(isDesktop){
+                  return setnumCards(4) 
+                }
+            
+             
+            }
+
+    {/*YA CUENTO CON LA VARIAble windowWidth */}
+     
 
     useEffect(()=>{
       setLoading(true)
@@ -34,12 +86,23 @@ import icon from '../../assets/tecnologi/css.svg'
     return (
     <section id="portfolio" className="container__portafolio">
         <h5>My recent Work</h5>
-       <div className="container__title">
-        <h2 className="name-main">· Portafolio ·</h2>
-        </div>
-            <div className="body__container--portafolio">
+          <div className="container__title">
+            <h2 className="name-main">· Portafolio ·</h2>
+          </div>
+          <div className="container-main">
+       
+            <Swiper
+             modules={[Navigation, Pagination, Scrollbar, A11y]}
+            className="body__container--portafolio "
+            spaceBetween={35}
+            slidesPerView={numCards}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            >
               { proyectos.map( (item, index)  => (
-                <article key={index} className="container__card--portafolio">
+             
+                <SwiperSlide key={index} className="container__card--portafolio">
                   <div className="head__portafolio--img">
                     <img src={item.ruta} className="card__img" alt=""/>
                   </div>
@@ -63,9 +126,15 @@ import icon from '../../assets/tecnologi/css.svg'
                         { item.tecnologiaImg.map( (image, index)  => (
                           <img className="" key={index} src={`./tecnologi/${image}`} alt=""/>
                         ))}
-                      </div>  
-                </article> ))}
-            </div>
+                         
+                      </div> 
+                      <span className="container__footer--card">
+                            <h3>#{index+1}</h3>
+                          </span>
+                </SwiperSlide>
+               ))}
+                 </Swiper>
+                 </div>
    </section>
   )
 }
