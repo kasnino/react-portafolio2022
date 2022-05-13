@@ -1,228 +1,211 @@
 .portfolio h1 {
-    color:coral;
+  color: coral;
 }
 
-.container__portafolio{
-    gap: 2rem;
-    padding: 7rem 2rem 2rem 2rem;
+.container__portafolio {
+  gap: 2rem;
+  padding: 7rem 2rem 2rem 2rem;
 }
 
-.container-main{
-    padding:7rem 2rem 2rem 2rem;
+.container-main {
+  padding: 7rem 2rem 2rem 2rem;
 }
 
 .swiper {
-    padding: 0rem 0rem 4rem 2rem !important;
+  padding: 0rem 0rem 4rem 2rem !important;
 }
 
-.body__container--portafolio{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-bottom: 6rem;
-    gap: 5rem 2.2rem;
-    
+.body__container--portafolio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 6rem;
+  gap: 5rem 2.2rem;
 }
 
 .swiper-pagination-bullet {
-    background: var(--color-light) !important;
+  background: var(--color-light) !important;
 }
 
-.title__portafolio{
-    width: 100%;
+.title__portafolio {
+  width: 100%;
+  padding: 5rem 2rem 2rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.demo__projects:hover {
+  color: var(--color-primary);
+}
+.demo__projects p {
+  font-size: 15px;
+}
+
+.text--light {
+  padding: 5rem 2rem 2rem 2rem;
+  color: pink;
+}
+
+.text__light--card {
+  color: var(--color-light);
+}
+
+.body__portafolio--card {
+  line-height: 25px;
+  padding: 0.5rem 0rem 0rem 0rem;
+}
+
+.body__portafolio--card h4 {
+  color: #7fffd4;
+}
+
+.mini-card:focus-within ~ .mini-card,
+.mini-card:hover ~ .mini-card {
+  transform: translateX(80px) scale(0.8) rotate(10deg);
+  transition: 0.2s;
+}
+.mini-card:focus-within,
+.mini-card:hover {
+  transform: translateY(5px) scale(1.1) rotate(0deg);
+  transition: 0.2s;
+}
+.mini-card {
+  box-shadow: -0.7rem 0 1rem var(--shadown-card);
+  transition: 0.2s;
+  margin: 0;
+  cursor: pointer;
+}
+
+.link__portafolio--card {
+  padding: 1.8rem 1rem;
+}
+
+.demo__projects {
+  border: 1px solid var(--color-light);
+  padding: 0rem 3rem 1rem;
+  cursor: pointer;
+  border-radius: 10rem;
+  position: relative;
+  width: max-content;
+}
+
+.demo__projects:hover {
+  border: 1px dashed var(--color-primary);
+  background: var(--color-bg);
+}
+
+.link__github--projects {
+  border: 1px solid var(--color-light);
+  border-radius: 10rem;
+}
+
+.empresa__portafolio {
+  color: #dddedf;
+}
+
+.icono__plus {
+  position: absolute;
+  font-size: 28px;
+  left: 2px;
+  top: 3px;
+}
+
+.demo__projects p {
+  position: absolute;
+  right: 9px;
+  top: 3px;
+}
+
+.logos__tecnologias {
+  display: grid;
+  grid-template-columns: repeat(5, 10%);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem 1rem 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+.logos__tecnologias img {
+  width: 38px;
+  height: 38px;
+  border: 2px solid var(--color-primary-variant);
+  border-radius: 50%;
+  margin: 0.3rem 0.2rem 0rem 0.4rem;
+  background: var(--color-bg);
+  background-image: contain;
+}
+
+.logos__tecnologias img:hover {
+  border: 2px dashed var(--color-primary);
+}
+
+@media screen and (max-width: 640px) {
+  .body__container--portafolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem 2rem;
     padding: 5rem 2rem 2rem 2rem;
-    text-align:center;
-    display: flex;
-    justify-content:center;
+  }
 }
 
-.demo__projects:hover{
-    color: var(--color-primary);
-}
-.demo__projects p{
-    font-size: 15px;
-   
-}
-
-.text--light{
-    padding: 5rem 2rem 2rem 2rem;
-    color: pink;
-}
-
-.text__light--card
-{
-    color: var(--color-light);
+.container__card--portafolio {
+  /* background:var(--color-primary-variant); */
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary-variant),
+    transparent
+  );
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  border-radius: 1.5rem;
+  position: relative;
 }
 
-.body__portafolio--card
-{
-    line-height: 25px;
-    padding: 0.5rem 0rem 0rem 0rem;
+.container__card--portafolio:hover {
+  background: var(--color-bg);
 }
 
-.body__portafolio--card h4{
-    color:#7fffd4; 
+.card__img {
+  -webkit-mask-image: linear-gradient(to bottom, purple, purple, transparent);
+  width: 100%;
+  height: 200px;
+  padding: 1rem 1rem 1rem 1rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
 }
 
+.container__footer--card {
+  color: var(--color-primary);
+  right: 15px;
+  bottom: 15px;
+  position: absolute;
+}
 
-.mini-card:focus-within~.mini-card, .mini-card:hover~.mini-card {
-    transform: translateX(80px) scale(0.8)  rotate(10deg);
-    transition: .2s;
-  
+.count__elementos {
+  color: var(--color-primary);
+  right: 15px;
+  bottom: 15px;
+  position: absolute;
 }
-.mini-card:focus-within, .mini-card:hover {
-    transform: translateY(5px) scale(1.1)  rotate(0deg);
-    transition: .2s;
-   
-}
-.mini-card{
-      box-shadow: -0.7rem 0 1rem var(--shadown-card);
-      transition: .2s;
-      margin: 0;
-      cursor: pointer;
+
+@media screen and (max-width: 1024px) {
+  .body__container--portafolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem 2rem;
+    padding: 4rem 1rem 2rem 2rem;
   }
 
-.link__portafolio--card
-{
- padding: 1.8rem 1rem;
-}
+  .container__portafolio {
+    gap: 2rem;
+    padding: 0rem;
+  }
 
- .demo__projects{
-   border: 1px solid var(--color-light);
-   padding: 0rem 3rem 1rem;
-   cursor: pointer;
-   border-radius: 10rem;
-   position: relative;
-   width:max-content;
-} 
+  .container-main {
+    padding: 0rem 2rem 1.5rem 1.5rem;
+  }
 
-.demo__projects:hover{
-    border: 1px dashed var(--color-primary);
-    background:var(--color-bg);
-}
-
-.link__github--projects{
-    border: 1px solid var(--color-light);
-    border-radius: 10rem;
-    
-}
-
-.empresa__portafolio{
-    color:#dddedf;
-}
-
-.icono__plus{
-    position: absolute;
-    font-size: 28px;
-    left: 2px;
-    top: 3px;
-}
-
-.demo__projects p{
-    position: absolute;
-    right: 9px;
-    top: 3px;
-}
-
-.logos__tecnologias{
-    display:grid;
-    grid-template-columns: repeat(5, 10%);
-    justify-content:center;
-    align-items: center;
-    padding: 1rem 0rem 1rem 0.5rem;
-    text-align: center;
-    width:100%;
-    
-   
-}
-.logos__tecnologias img{
-    width:38px;
-    height:38px;
-    border: 2px solid var(--color-primary-variant);
-    border-radius: 50%;
-    margin: 0.3rem 0.2rem 0rem 0.4rem;
-    background:var(--color-bg);
-    background-image: contain;
-   
-}
-
-.logos__tecnologias img:hover{
-    border: 2px dashed var(--color-primary);
-}
-
-@media screen and (max-width: 640px)
-{
-    .body__container--portafolio{
-        display:grid;
-        grid-template-columns: 1fr;
-        gap: 4rem 2rem;
-        padding: 5rem 2rem 2rem 2rem;
-    } 
-}
-
-.container__card--portafolio{
-    /* background:var(--color-primary-variant); */
-      background: linear-gradient(
-        45deg,
-        transparent,
-        var(--color-primary-variant),
-        transparent
-      );
-      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      border-radius: 1.5rem;
-      position: relative;
-    
-}
-
-.container__card--portafolio:hover{
-    background:var(--color-bg); 
-    
-   
-}
-
-.card__img{
-    -webkit-mask-image: linear-gradient(to bottom,purple,purple,transparent);
-    width:100%;
-    height: 200px;
-    padding: 1rem 1rem 1rem 1rem;
-    border-top-left-radius: 2.5rem;
-    border-top-right-radius: 2.5rem; 
-}
-
-.container__footer--card{
-  
-   
-   color: var(--color-primary);
-    right:15px;
-    bottom:15px;
-    position: absolute;
-}
-
-.count__elementos{
-    color: var(--color-primary);
-    right:15px;
-    bottom:15px;
-    position: absolute;
-}
-
-@media screen and (max-width: 1024px)
-{
-    .body__container--portafolio{
-        display:grid;
-        grid-template-columns: 1fr;
-        gap: 4rem 2rem;
-        padding: 5rem 2rem 2rem 2rem;
-    }
-
-    .container__portafolio{
-        gap: 2rem;
-        padding: 0rem;
-    }
-
-    .container-main{
-        padding:0rem 2rem 1rem 1rem;
-        
-    }
-
-   
-    
+  .swiper {
+    padding: 0rem 1rem 0.5rem 1.5rem !important;
+  }
 }
