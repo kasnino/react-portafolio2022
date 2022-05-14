@@ -156,12 +156,17 @@
 }
 
 @media screen and (max-width: 640px) {
+
+  .swiper-fixed-width-300 {
+    width: 325px !important;
+  }
   .body__container--portafolio {
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem 2rem;
     padding: 5rem 2rem 2rem 2rem;
   }
+
 }
 
 .container__card--portafolio {

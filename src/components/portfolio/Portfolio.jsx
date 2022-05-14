@@ -115,7 +115,7 @@ const About = () => {
           {proyectos.map((item, index) => (
             <SwiperSlide
               key={index}
-              className="container__card--portafolio mini-card"
+              className="container__card--portafolio mini-card swiper-fixed-width-300"
             >
               <div className="head__portafolio--img">
                 <img src={item.ruta} className="card__img" alt="" />
