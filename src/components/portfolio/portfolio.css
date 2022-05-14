@@ -5,16 +5,39 @@
 .container__portafolio {
   gap: 2rem;
   padding: 7rem 2rem 2rem 2rem;
+  
 }
 
 .container-main {
-  padding: 7rem 2rem 2rem 2rem;
+  padding: 7rem 1rem 2rem 1rem;
+ 
 }
 
-.swiper {
-  padding: 0rem 0rem 4rem 2rem !important;
+
+@media screen and (min-width: 1340px) {
+  .swiper {
+    padding: 2rem 0rem 4rem 2rem !important;
+   
+  }
 }
 
+@media screen and (min-width: 1400px) {
+  .swiper {
+    padding: 2rem 0rem 4rem 0rem !important;
+    
+  }
+
+  .container-main {
+    padding: 7rem 0rem 2rem 1rem;
+    
+  }
+
+  .container__portafolio {
+    gap: 2rem;
+    padding: 7rem 0rem 0rem 0rem;
+   
+  }
+}
 .body__container--portafolio {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
