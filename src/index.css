@@ -10,6 +10,12 @@
     src: url("./assets/Dinamit Thin.otf");
 }
 
+@font-face {
+  font-family: "Dinamit-lighttt";
+  src: url("./assets/Dinamit Light.otf");
+}
+
+
 *{
   margin:0;
   padding:0;

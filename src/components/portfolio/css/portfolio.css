@@ -4,16 +4,17 @@
 
 .container__portafolio {
   gap: 2rem;
-  padding: 7rem 0rem 0rem 0rem;
+  padding: 7rem 0rem 3rem 0rem;
 }
 
 .container-main {
-  padding: 7rem 0rem 0rem 0rem;
+  padding: 7rem 0rem 3rem 0rem;
+  
 }
 
 @media screen and (min-width: 1340px) {
   .swiper {
-    padding: 2rem 0rem 0rem 0rem !important;
+    padding: 2rem 0rem 4rem 0rem !important;
   }
 }
 

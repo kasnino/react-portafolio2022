@@ -1,6 +1,5 @@
 {
     "projects": [
-      
         {
             "empresa": "Cryptonumbres",
             "title": "NFT maquetacion",
@@ -37,7 +36,7 @@
   
         {
             "empresa": "App /Elearnig ",
-            "title": "App / Mobile",
+            "title": "App / Mobile · IBRACO",
             "subtitle": "App Mobile",
             "tecnologiaImg": [
                 "Vue.js-Logo.wine.png",
