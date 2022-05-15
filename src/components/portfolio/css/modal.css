@@ -62,12 +62,17 @@ width: 70%;
   position:absolute;
 }
 
+
 .contenido__info__proyecto{
   display:grid;
   grid-template-columns: 60% 40%;
   gap: 0rem 0rem 2rem 2rem;
   padding:1rem 2rem; 
   height: 100%;
+}
+
+.id__project{
+color: var(--texto-pink);
 }
 
 .info__left--description{

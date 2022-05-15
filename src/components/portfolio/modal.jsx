@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/modal.css";
-
+import { AiOutlinePlusCircle } from "react-icons/ai";
+import { SiGithub } from "react-icons/si";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import rostro from "../../assets/rostro.png";
 
@@ -18,11 +19,11 @@ const modal = ({ isOpen, closeModal, arrayProyectos, IdProyecto }) => {
               </div>
               <div className="contenido__info__proyecto">
                 <div className="info__left--description">
-                  <h2>· #{IdProyecto} - {arrayProyectos[IdProyecto].title} ·</h2>
+                  <h2>· <strong className="id__project">#{IdProyecto+1}</strong> · {arrayProyectos[IdProyecto].title} ·</h2>
 
                   <span className="container__subTexto">
-                    <h5> Emprea </h5> |<h5> Tipo de proyecto..</h5>|
-                    <h5>Vuejs</h5>
+                    <h5> {arrayProyectos[IdProyecto].empresa} </h5> |<h5> {arrayProyectos[IdProyecto].subtitle}..</h5>|
+                    <h5>· Vuejs ·</h5>
                   </span>
 
                   <div className="container__tecno">
@@ -57,6 +58,19 @@ const modal = ({ isOpen, closeModal, arrayProyectos, IdProyecto }) => {
                       fugit veniam.
                     </h3>
                   </div>
+                  <div className="link__portafolio--card">
+                    <a href={arrayProyectos[IdProyecto].link} target="_blank" className="demo__projects">
+                    <AiOutlinePlusCircle
+                        className="icono__plus"
+                        color="#d2d2d2"
+                    />
+                    <p>Demo</p>
+                    </a>
+                    <a className="demo__projects">
+                    <SiGithub className="icono__plus" color="#d2d2d2" />
+                    <p>Github</p>
+                    </a>
+                </div>
                 </div>
 
                 <div className="info__right--description"></div>
