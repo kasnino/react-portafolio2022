@@ -184,7 +184,13 @@
 }
 
 .container__card--portafolio:hover {
-  background: var(--color-bg);
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(
+      280deg,
+      rgba(255, 255, 255, 0) -19.17%,
+      rgb(18, 20, 39) 49.09%
+    )
+    repeat scroll 0% 0% !important;
 }
 
 .card__img {

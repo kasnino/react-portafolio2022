@@ -20,10 +20,10 @@ const modal = ({ isOpen, closeModal, arrayProyectos, IdProyecto }) => {
               <div className="contenido__info__proyecto">
                 <div className="info__left--description">
                   <h2>· <strong className="id__project">#{IdProyecto+1}</strong> · {arrayProyectos[IdProyecto].title} ·</h2>
-
                   <span className="container__subTexto">
                     <h5> {arrayProyectos[IdProyecto].empresa} </h5> |<h5> {arrayProyectos[IdProyecto].subtitle}..</h5>|
-                    <h5>· Vuejs ·</h5>
+                    <h5>· Vuejs ·</h5> 
+                    <span className="fecha__proyecto">Fecha  &nbsp;&nbsp;  {arrayProyectos[IdProyecto].fecha} ·</span>
                   </span>
 
                   <div className="container__tecno">

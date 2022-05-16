@@ -15,16 +15,8 @@
   width: 100%;
 }
 
-.icono__close {
-  position: absolute;
-  right: 3px;
-  top: 5px;
-  color: var(--texto-pink);
-  cursor: pointer;
-}
-.icono__close:hover {
-  color: var(--color-primary);
-}
+
+
 .container__description--Projects {
   position: absolute;
   height: 100vh;
@@ -45,27 +37,63 @@
   
   height: 100vh;
   overflow: hidden;
-position: absolute;
-width: 70%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-  
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
-.container__btn--modal:hover{
-  border-radius: 1rem;
-  background:#0000005d;
+
+.container__btn--modal:hover:after{
+  content:'Cerrar';
+  position: absolute;
+  bottom:-33px;
+  color: var(--color-primary);
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0)
+  linear-gradient(
+    280deg,
+    rgba(255, 255, 255, 0) -19.17%,
+    rgb(18, 20, 39) 49.09%
+  )
+  repeat scroll 0% 0% !important;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  border-radius: 1.2rem;
   width:max-content;
-  right: 3px;
-  padding:2.1rem 2.8rem 2.5rem 2.5rem;
-  position:absolute;
+  text-align: center;
+
+}
+.container__btn--modal{
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0)
+  linear-gradient(
+    280deg,
+    rgba(255, 255, 255, 0) -19.17%,
+    rgba(18, 20, 39, 0.712) 49.09%
+  )
+  repeat scroll 0% 0% !important;
+width:100px;
+ height: 100px;
+position:absolute;
+right: 3px;
+top: 5px;
+display:flex;
+justify-content: center;
+align-items: center;
 }
 
-
+.icono__close {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.icono__close:hover {
+ 
+  color: var(--texto-pink);
+}
 .contenido__info__proyecto{
   display:grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 70%;
   gap: 0rem 0rem 2rem 2rem;
   padding:1rem 2rem; 
   height: 100%;
@@ -89,11 +117,29 @@ font-size: 2.6rem;
 padding: 1.6rem 2rem;
 }
 
+.fecha__proyecto{
+  color: var(--color-light);
+font-size: 0.7rem;
+text-align: center;
+padding:0rem 1rem 0rem 1rem;
+font-family: "Dinamit-light";
+background: rgba(34, 31, 31, 0)
+linear-gradient(
+  280deg,
+  rgba(63, 59, 59, 0) -19.17%,
+  rgba(57, 57, 61, 0.349) 49.09%
+)
+repeat scroll 0% 0% !important;
+font-weight: bold;
+border-radius: 1rem;
+
+}
+
 .info__left--description h5{
   
   font-size: 1.2rem;
   color: var(--color-light);
-  padding: 0rem 2rem 2rem 2rem;
+  padding: 0rem 2rem 0rem 2rem;
   gap: 2rem;
   font-family: "Dinamit-lighttt";
   }
@@ -119,7 +165,7 @@ padding: 1.6rem 2rem;
 }
 
 .info__right--description{
-  
+  background: none;
 }
 
 .container__tecno h3{
@@ -159,4 +205,37 @@ padding: 1.6rem 2rem;
 
 .logos__tecnologias--modal img:hover {
   border: 2px dashed var(--color-primary);
+}
+
+@media screen and (max-width: 640px) {
+  .container__subTexto {
+    flex-wrap: wrap-reverse;
+  }
+
+  .contenido__info__proyecto {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 0rem 0rem 2rem 2rem;
+    overflow:scroll;
+    height: 100%;
+  }
+  .container__information--projects {
+    font-family: "Dinamit";
+    color: var(--color-light);
+    padding: 1rem 1rem 1rem 1rem;
+}
+.contenido__info__proyecto {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 0rem 0rem 2rem 2rem;
+  padding: 0rem 0rem;
+  height: 100%;
+}
+.info__left--description h2 {
+  color: var(--color-primary);
+  font-size: 2.6rem;
+  padding: 0.6rem 2rem;
+  display: grid;
+  line-height:2rem
+}
 }
