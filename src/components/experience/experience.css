@@ -20,20 +20,11 @@
 
 .experience__contain {
   display: grid;
-  grid-template-columns: 25% 25%;
-  padding: 2rem 2rem 0rem;
+  grid-template-columns: 40% 40%;
+  padding: 2rem 2rem 2rem 2rem;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem 5.5rem;
-}
-
-.experience__contain--description {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 2rem 1rem 1.5rem 2rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem 5.5rem;
+  gap: 0.8rem 3.5rem;
 }
 
 .left__frontend {
@@ -48,6 +39,16 @@
     transparent
   );
 }
+.experience__contain--description {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem 1rem 1.5rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem 5.5rem;
+}
+
+
 
 .right__frontend {
   border: 2px dashed var(--color-light);
@@ -93,7 +94,60 @@
   margin: 0rem 0rem 0rem 1.7rem;
 }
 
+@media screen and (max-width: 640px)
+{
+
+  .right__frontend {
+    border: 2px dashed var(--color-light);
+    padding: 2rem 0rem 2rem;
+    border-radius: 15px;
+}
+  .sub__container--experience {
+    display: grid;
+    grid-template-columns: 100%;
+    transition: var(--transition);
+  
+  }
+  .experience__contain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    transition: var(--transition);
+    gap: 3rem;
+    text-align: center;
+    transition: var(--transition);
+  }
+
+  .left__frontend {
+    border-radius: 15px;
+  }
+
+  .left__frontend {
+    padding: 2rem 1rem 2rem;
+    border-radius: 15px;
+    aspect-radio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      var(--color-primary-variant),
+      transparent
+    );
+  }
+}
 @media screen and (max-width: 1024px) {
+
+  .left__frontend {
+    padding: 2rem 2rem 2rem;
+    border-radius: 15px;
+    aspect-radio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      var(--color-primary-variant),
+      transparent
+    );
+  }
   .sub__container--experience {
     display: grid;
     grid-template-columns: 95%;

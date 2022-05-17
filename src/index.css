@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 
 @font-face {
-    font-family: "Dinamit";
-    src: url("./assets/Dinamit Regular.otf");
+  font-family: "Dinamit";
+  src: url("./assets/Dinamit Regular.otf");
 }
 
 @font-face {
-    font-family: "Dinamit-light";
-    src: url("./assets/Dinamit Thin.otf");
+  font-family: "Dinamit-light";
+  src: url("./assets/Dinamit Thin.otf");
 }
 
 @font-face {
@@ -15,134 +15,174 @@
   src: url("./assets/Dinamit Light.otf");
 }
 
-
-*{
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  box-sizing:border-box;
-  list-style:none;
-  text-decoration:none;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-:root{
+:root {
   --color-bg: #0a1531;
-  --color-bg-variant:#2c2c6c;
+  --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77,181,255,0.4);
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
-  --color-light: rgba(255,255,255,0.6);
-  --container-width-lg:75%;
-  --container-width-md:86%;
-  --container-width-sm:95%;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 95%;
   --transition: all 400ms linear;
-  --texto-pink:#F02478;
+  --texto-pink: #f02478;
 }
 
 a {
-    color: var(--color-primary);
-    padding:5px;
-    margin:10px;
+  color: var(--color-primary);
+  padding: 5px;
+  margin: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.name-main {
+ 
+  font-family: "Dinamit-light";
+  font-size: 3rem;
+  height: max-content;
+
+  color: var(--texto-pink);
+  transition: var(--transition);
+  position: relative;
+}
+
+@media screen and (max-width: 640px) {
+  .name-main {
+   
+    font-family: "Dinamit-light";
+    font-size: 2.3rem;
+    height: max-content;
+
+    color: var(--texto-pink);
     transition: var(--transition);
-    cursor: pointer;
+    position: relative;
   }
 
-a:hover{
-  color:var(--color-white);
+  .name-main::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #c33764; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #1d2671,
+      #c33764
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #1d2671,
+      #c33764
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: var(--transition);
+    position: absolute;
+    bottom: -7px;
+    left: 15%;
+    width: 65%;
+  }
+
+  .container {
+    width: var(--container-width-md);
+    margin: 0 auto;
+  }
 }
 
-@media screen and (max-width: 640px){
-  
- .name-main{
-   font-family: "Dinamit-light";
-   font-size: 2.4rem;
-   height: max-content;
-   /* padding-top: 1.2rem; */
-    
-  }
-  .container{
-  width: var(--container-width-md);
-  margin: 0 auto;
-  }
-}
-
-.container{
+.container {
   width: var(--container-width-lg);
   margin: 0 auto;
- 
 }
 
-@media screen and (max-width: 1024px){
-.container{
-  width: var(--container-width-sm);
-  margin: 0 auto;
-}
- .name-main{
-   font-family: "Dinamit-light";
-   font-size: 2.7rem;
-   height: max-content;
-   /* padding: 1rem 0 1rem 1rem; */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-sm);
+    margin: 0 auto;
   }
+
+  /* .name-main {
+    
+    font-family: "Dinamit-light";
+    font-size: 2.4rem;
+    height: max-content;
+
+    color: var(--texto-pink);
+    transition: var(--transition);
+    position: relative;
+  } */
 }
 
-::-webkit-scrollbar{
-  display:none;
-}
- 
-body{
-   scroll-behavior:smooth;
-   font-family: 'Montserrat', sans-serif;
-   background-color: var(--color-bg);
-   line-height: 1.8em;
-   position:relative;  
+::-webkit-scrollbar {
+  display: none;
 }
 
-h1, h2, h3, h4, h5
-{
+body {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-bg);
+  line-height: 1.8em;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 500;
   font-family: "Dinamit";
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
 }
 
-
-
-section > h2, section > h5 {
+section > h2,
+section > h5 {
   text-align: center;
   color: var(--color-light);
 }
 
-.text-light{
- color: var(--color-light);
+.text-light {
+  color: var(--color-light);
 }
 
-.name-main{
-   font-family: "Dinamit-light";
-   font-size: 3rem;
-   height: max-content;
-   padding: 0rem 2rem 1px 1rem;
-   color: var( --texto-pink);
-  transition: var(--transition);
-  position: relative;
+@media screen and (min-width: 640px) {
+  .name-main::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #c33764; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #1d2671,
+      #c33764
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #1d2671,
+      #c33764
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: var(--transition);
+    position: absolute;
+    bottom: -7px;
+    left: 15%;
   }
 
-
-.name-main::after{
-  content:'';
-  width: 0%;
-  height: 2px;
-  background: #C33764;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  transition: var(--transition);
-  position: absolute;
-  bottom:-7px;
-  left: 15%;
-}
-
-.name-main:hover::after{
-width:65%;
+  .name-main:hover::after {
+    width: 65%;
+  }
 }

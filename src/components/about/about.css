@@ -164,4 +164,9 @@
      .about__cards .about__card{
       padding: 0.8rem;
     }
+
+    .about__contenido{
+      padding: 0rem 0rem;  
+   }
+   
 }

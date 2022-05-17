@@ -10,7 +10,7 @@ const Header = () => {
     return (
        <header className="App-header container Header">
                 <h5 className="text-second">Hi! I'm</h5>
-                <h1 className="name-main">· Kristian · Serrano ·</h1>
+                <h1 className="name-main">·&nbsp;Kristian&nbsp;·&nbsp;Serrano&nbsp;·</h1>
                 <h5 className="text-second">Frontend ·· Developer</h5>
             <CTA/>
                 <div className="perfil-img">
@@ -26,7 +26,7 @@ const Header = () => {
                     </div>
                     <img src={rostro} alt="foto de perfil"/>
                 </div>
-                <a href="#contact" className="scroll-abajo">Scroll Down 
+                <a href="#contact" className="scroll-abajo">Scroll Down··· 
                    <img src={arrow} alt="foto de perfil" width="45px"/>
                 </a>
             <Redes/>
