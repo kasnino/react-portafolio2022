@@ -24,7 +24,7 @@ const modal = ({ isOpen, closeModal, arrayProyectos, IdProyecto }) => {
                   <h2>· <strong className="id__project bounceIn animated dura-1">#{IdProyecto+1}</strong> · {arrayProyectos[IdProyecto].title} ·</h2>
                   <span className="container__subTexto">
                     <h5> {arrayProyectos[IdProyecto].empresa} </h5> |<h5> {arrayProyectos[IdProyecto].subtitle}..</h5>|
-                    <h5>·&nbsp;Vuejs&nbsp;·</h5> 
+                    <h5>·&nbsp;Vuejs&nbsp;·</h5> |&nbsp;&nbsp; 
                     <span className="fecha__proyecto">Fecha&nbsp;&nbsp;{arrayProyectos[IdProyecto].fecha}&nbsp;·</span>
                   </span>
 

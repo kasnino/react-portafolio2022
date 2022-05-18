@@ -209,8 +209,10 @@ border-radius: 1rem;
 
 @media screen and (max-width: 640px) {
   .container__subTexto {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     padding: 2rem 0rem 2rem 0rem;
+    display: flex;
+    flex-direction: row-reverse;
   }
 
   .contenido__info__proyecto {
