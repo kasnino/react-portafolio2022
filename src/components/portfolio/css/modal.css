@@ -156,7 +156,7 @@ border-radius: 1rem;
 .container__information--projects{
   font-family: "Dinamit";
   color: var(--color-light);
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2.5rem 2rem 2rem 0rem;
 
 }
 
@@ -209,7 +209,7 @@ border-radius: 1rem;
 
 @media screen and (max-width: 640px) {
   .container__subTexto {
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     padding: 2rem 0rem 2rem 0rem;
   }
 
