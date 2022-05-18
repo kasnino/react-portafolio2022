@@ -17,7 +17,7 @@
             "link": "http://annoyed-deer.surge.sh/",
             "logo": "wrapped-bitcoin-wbtc-logo.svg",
             "ruta": "http://imgfz.com/i/0hudm8w.png",
-            "description" : "<h3>Este proyecto se llama <strong>Cryptonumbers</strong> es una plataforma que genera tokens con contratos unicos.</h3> <h3> Fue realizado con las siguientes tecnologias (Vuejs x2, Vuetify, NUXT, manipulacion de SVG,  animation Scroll, adaptacion a distintos dispositivos)</h3>"
+            "description" : "<h5>Este proyecto se llama <strong>Cryptonumbers</strong> es una plataforma que genera tokens con contratos unicos.</h5> <h5> Fue realizado con las siguientes tecnologias (Vuejs x2, Vuetify, NUXT, manipulacion de SVG,  animation Scroll, adaptacion a distintos dispositivos)</h5>"
         },
         {
             "empresa": "Reemp",
@@ -34,7 +34,7 @@
             "link": "http://well-off-nose.surge.sh/interfaz/dashboard/dashboard/",
             "logo": "sass-1.svg",
             "ruta": "http://imgfz.com/i/OPs1hxa.jpeg",
-            "description": "<h3><strong>Reemp</strong> es una StartUP Colombiana donde realice varios trabajos, desde la maquetacion hasta la creacion de Dashoards completos.</h3> <h3> en este demo se puede observar la creacion de una plataforma completa, usando diferentes tecnologias especificamente (Vuejs, Vuetify, formularios Validations, Graficos dinamicos, creacion de componentes desde cero)</h3> "
+            "description": "<h5><strong>Reemp</strong> es una StartUP Colombiana donde realice varios trabajos, desde la maquetacion hasta la creacion de Dashoards completos.</h5> <h5> en este demo se puede observar la creacion de una plataforma completa, usando diferentes tecnologias especificamente (Vuejs, Vuetify, formularios Validations, Graficos dinamicos, creacion de componentes desde cero)</h5> "
         },
   
         {
