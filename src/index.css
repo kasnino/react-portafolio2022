@@ -186,3 +186,36 @@ section > h5 {
     width: 65%;
   }
 }
+
+
+/* 
+
+$mediaq-sm: 576px;
+$mediaq-md: 768px;
+$mediaq-lg: 992px;
+$mediaq-xl: 1200px;
+$mediaq-xxl: 1400px;
+
+@mixin media-query($break-point) {
+  @if $break-point == $mediaq-xxl {
+    @media only screen and (max-width: $mediaq-xxl) {
+      @content;
+    }
+  } @else if $break-point == $mediaq-xl {
+    @media only screen and (max-width: $mediaq-xl) {
+      @content;
+    }
+  } @else if $break-point == $mediaq-lg {
+    @media only screen and (max-width: $mediaq-lg) {
+      @content;
+    }
+  } @else if $break-point == $mediaq-md {
+    @media only screen and (max-width: $mediaq-md) {
+      @content;
+    }
+  } @else if $break-point == $mediaq-sm {
+    @media only screen and (max-width: $mediaq-sm) {
+      @content;
+    }
+  }
+}*/
