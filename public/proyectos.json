@@ -52,7 +52,7 @@
             "link": "http://demos.dominioestudio.info/ibraco/libro1/unidad3/#/unidad3/0",
             "logo": "Vue.js-Logo.wine.png",
             "ruta": "http://imgfz.com/i/0GDcB5v.png",
-            "description": "<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem vel ipsum asperiores? Odit sunt voluptates unde porro, facere quo optio ducimus consequuntur. Voluptatibus obcaecati veritatis repellendus assumenda, fugit veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem vel ipsum asperiores? Odit sunt voluptates unde porro, facere quo optio ducimus consequuntur. Voluptatibus obcaecati veritatis repellendus assumenda, fugit veniam.</h5>"
+            "description": "<h5><strong>IBRACO - Plataforma E-learning</strong> (SPA) Single Page Aplication realizada con Vuejs y Vuetify.</h5> <h5>El objetivo de esta plataforma es enseñar portuguez atravez de diferentes modulos, cada modulo con diferentes interacciones..</h5> <h5><ol><li>· Drag on Drop</li><li>· Manipulacion de Arrays</li><li>· Router Dinamico</li><li>· Creacion de componentes</li></ol></h5>"
         },
         {
             "empresa": "Tailwinds Vuejs",

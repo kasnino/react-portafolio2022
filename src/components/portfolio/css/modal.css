@@ -239,4 +239,11 @@ border-radius: 1rem;
   display: grid;
   line-height:2rem
 }
+.info__left--description h5 {
+  font-size: 1rem;
+  color: var(--color-light);
+  padding: 0rem 1rem 1rem 0.5rem;
+  gap: 2rem;
+  font-family: "Dinamit-lighttt";
+}
 }
