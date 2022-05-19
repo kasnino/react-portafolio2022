@@ -10,6 +10,10 @@ import { BsWhatsapp } from "react-icons/bs";
 
 const Contact = () => {
 
+  const GetMeWhatsapp = () => {
+     return  window.open('https://wa.link/c2kloe', '_blank');
+    };
+
     const form = useRef();
     const notifyError = () => toast.error("Error interno​, lo siento NO se hizo el envio 😓📨​",
     {
@@ -58,8 +62,9 @@ const Contact = () => {
 
                  <div className="contact__container ">
                     <div className="contact__opcions">
-                        <article className="contact__opction">
-                        <MdOutlineEmail/>
+                      
+                        <article className="contact__opction" >
+                        <MdOutlineEmail />
                             <h4>Email</h4>
                             <small><h5>kasn.emprendedor@gmail.com</h5></small>
                             <a href="mailto:kasn.emprendedor@gmail.com" target="_blank">
@@ -67,8 +72,8 @@ const Contact = () => {
                             </a>
                         </article>
 
-                        <article className="contact__opction">
-                        <BsWhatsapp/>
+                        <article className="contact__opction" onClick={GetMeWhatsapp}>
+                        <BsWhatsapp className="icono__whatsapp"/>
                             <h4>Whatsapp</h4>
                             <h5>+573125906937</h5>
                             <a href="https://wa.link/c2kloe" target="_blank">
@@ -80,8 +85,8 @@ const Contact = () => {
                     <div className="formulario__contact">
                         <form action="" ref={form} onSubmit={sendEmail}>
                             <input type="text" name="name" placeholder="Tú nombre" autoComplete="off" required/>
-                            <input type="email" name="email" placeholder="Tú email" autoComplete="nope" required  id="emailing"/>
-                            <textarea name="message" id="messade" placeholder="Aqui puedes enviarme un message, llegara directamente a mi email.... 📨​" autoComplete="noe" rows="7"></textarea>
+                            <input type="email" name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  placeholder="Tú email" autoComplete="nope" required  id="emailing"/>
+                            <textarea name="message" required id="messade" placeholder="Aqui puedes enviarme un message, llegara directamente a mi email.... 📨​" autoComplete="noe" rows="7"></textarea>
                             <div className="btn__container--contact">
                             <button type="submit" className="btn__contact"> Enviar... <BiMailSend size="20"/></button>
                             </div>

@@ -67,18 +67,23 @@
  
 }
 
-@media screen and (max-width: 640px)
+.service:nth-child(-n+2)::after
+{
+    content:'';
+    position: absolute;
+    background: url(../../assets/flecha-curva-con-linea-discontinua.svg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    right: -20%;
+}
+
+@media screen and (max-width: 840px)
 {
    .service:nth-child(-n+2)::after
    {
-       content:'';
-       position: absolute;
-       background-image: url(../../assets/flecha-curva-con-linea-discontinua.svg);
-       background-size: cover;
-       width: 100px;
-       height: 100px;
-       top: 20%;
-       right: -20%;
+      display:none;
    }
 }
 

@@ -29,8 +29,8 @@
     justify-content: flex-end;
     flex-direction: column-reverse;
     display: flex;
-    
-    
+    position: relative;
+  
  
 }
 
@@ -100,9 +100,31 @@ h5{
     margin-bottom: 20px;
   }
 
-
+  .contact__opction:nth-child(2):before{
+    content: 'Escribeme..!';
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    transform: rotate(-25deg);
+    font-family: "Dinamit";
+    letter-spacing: -0.1rem;
+    top: -10%;
+    right: 50%;
+}
+.contact__opction:nth-child(2):after{
+    content:'';
+    position: absolute;
+    background-image: url(../../assets/flecha-curva-con-linea-discontinua.svg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    top: 0%;
+    right: 50%;
+}
 @media screen and (max-width: 1024px)
 {
+
+   
     .contact__container{
         display:grid;
         width: 100%;
@@ -129,3 +151,59 @@ h5{
          width:100%;
      }
 }
+
+/* validation input */
+
+.formulario__contact form input:valid{
+  border: 2px dashed var(--color-primary);
+}
+
+.contact__opction:nth-child(2):hover{
+    cursor: pointer;
+    background:var(--color-bg);
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 654px)
+{
+    .contact__opction:nth-child(2):before{
+        content: 'Escribeme..!';
+        width: 100px;
+        height: 100px;
+        position:absolute;
+        transform: rotate(-25deg);
+        font-family: "Dinamit";
+        letter-spacing: -0.1rem;
+        top: -2%;
+        font-size: 0.7rem;
+        left: -7%;
+    }
+    .contact__opction:nth-child(2):after{
+        content:'';
+        position: absolute;
+        background-image: url(../../assets/flecha-curva-con-linea-discontinua.svg);
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+        top: 9%;
+        left: -7%;
+    }
+}
+
+
+.contact__opction:nth-child(2){
+border: 2px dashed var(--color-primary);
+color:#61dafb;
+}
+
+.formulario__contact form  input:focus:invalid{
+    border: 2px dashed red;
+  }
+
+  .formulario__contact form textarea:valid{
+    border: 2px dashed var(--color-primary);
+  }
+  .formulario__contact form textarea:focus:invalid{
+    border: 2px dashed red;
+
+  }
