@@ -24,7 +24,7 @@ const Nav = () => {
              <img src={education} alt="" width="30px"/>
             </a>
             <a  href="#" 
-                className={activeNav === '#home' ? 'active' : '' } 
+                className={activeNav === '#home' ? 'active' : 'menu-btn' } 
                 onClick={()=> setActiveNav('#home')}
             >
              <img src={menu} className="btn-icono" width="40px" alt=""/>

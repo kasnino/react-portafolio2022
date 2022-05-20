@@ -75,7 +75,7 @@ const Contact = () => {
                         <article className="contact__opction" onClick={GetMeWhatsapp}>
                         <BsWhatsapp className="icono__whatsapp"/>
                             <h4>Whatsapp</h4>
-                            <h5>+573125906937</h5>
+                            <h5>+57·3125906937</h5>
                             <a href="https://wa.link/c2kloe" target="_blank">
                                 Send a message
                             </a>
