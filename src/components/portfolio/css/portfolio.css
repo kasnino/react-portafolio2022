@@ -178,7 +178,7 @@
     var(--color-primary-variant),
     transparent
   );
-  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 0px 0px rgb(0 0 0 / 60%);
   border-radius: 1.5rem;
   position: relative;
 }
