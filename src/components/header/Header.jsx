@@ -15,22 +15,21 @@ const Header = () => {
     console.log("UseEffect Header");
     const Titulo = document.querySelector(".titulo_Header");
     const Nombre = document.querySelector(".my-name");
-    const subTitulo = document.querySelector(".subTitulo");
-    const circleTec = document.querySelectorAll(".circle");
-    const rostro = document.querySelector(".rostro");
-    const timeline = gsap.timeline();
+
 
     const redes = document.querySelector(".scroll-abajo"); 
     gsap.from(redes, {
         y:500,
         opacity: 0,
         duration:2,
+        ease: "back"
       });
 
     gsap.from(Titulo, {
       y: -50,
       opacity: 0,
       duration: 1.5,
+      ease: "back"
     });
 
     gsap.fromTo(

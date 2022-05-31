@@ -16,9 +16,12 @@ const Nav = () => {
         console.log("icnono: "+ icono)
         
         gsap.from(nav, {
-            y:100,
+            y:120,
+            x:0,
             opacity: 0,
-            duration:1,
+            duration:3,
+            ease: "back",
+            yPercent: 100
           });
 
         gsap.from(icono, {

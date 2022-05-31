@@ -8,14 +8,12 @@ import { useEffect } from "react";
 const headerSociales = () => {
 
     useEffect(() => {
-        const redes = document.querySelector(".redes-sociales");
-    
-    
-        
+        const redes = document.querySelector(".redes-sociales"); 
         gsap.from(redes, {
             y:-1000,
             opacity: 0,
             duration:3,
+            ease: "back"
           });
 
     }, [])
