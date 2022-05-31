@@ -141,6 +141,7 @@ const updateResponsive = () => {
 
        </Swiper>
        <Modal
+          
             arrayProyectos={proyectos}  
             isOpen={showModal}
             closeModal={closeModal}
