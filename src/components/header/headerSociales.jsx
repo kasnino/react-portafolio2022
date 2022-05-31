@@ -9,17 +9,16 @@ const headerSociales = () => {
 
     useEffect(() => {
         const redes = document.querySelector(".redes-sociales"); 
+        console.log("ingreso header redes sopciales");
         gsap.from(redes, {
-            y:-1000,
+            y:-500,
             opacity: 0,
             duration:3,
             ease: "back"
-          });
+          },"-=1");
 
     }, [])
-    return (
-
-        
+    return (  
         <div className="redes-sociales">
             <span>···redes profesionales···</span>
             <a className="icono" href="https://www.linkedin.com/in/kasnino/" target="_blank"><BsLinkedin /></a>

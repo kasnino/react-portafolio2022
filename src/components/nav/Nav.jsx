@@ -19,16 +19,16 @@ const Nav = () => {
             y:120,
             x:0,
             opacity: 0,
-            duration:3,
+            duration:2,
             ease: "back",
             yPercent: 100
-          });
+        },"-=2");
 
         gsap.from(icono, {
             opacity: 0,
-            duration:4,
-            stagger: .4,
-          },"-=2");
+            duration:1,
+            stagger: 0.2,
+          },"-=1");
     }, [])
 
     const [activeNav, setActiveNav] = useState('#home')

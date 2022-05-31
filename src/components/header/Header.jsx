@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
 import CTA from "./CTA";
+import HeaderTexto from "./HeaderTexto";
 import Redes from "./headerSociales.jsx";
 import avatar from "../../assets/avatar-empty.png";
 import arrow from "../../assets/icons-outline-arrow-down-1.svg";
@@ -12,51 +13,20 @@ import { useEffect } from "react";
 
 const Header = () => {
   useEffect(() => {
-    console.log("UseEffect Header");
-    const Titulo = document.querySelector(".titulo_Header");
-    const Nombre = document.querySelector(".my-name");
-
-
     const redes = document.querySelector(".scroll-abajo"); 
+    console.log("ingreso header main");
     gsap.from(redes, {
         y:500,
         opacity: 0,
         duration:2,
         ease: "back"
-      });
-
-    gsap.from(Titulo, {
-      y: -50,
-      opacity: 0,
-      duration: 1.5,
-      ease: "back"
-    });
-
-    gsap.fromTo(
-      Nombre,
-      {
-        scale: 1,
-      },
-      {
-        scale: 1.1,
-        yoyo: false,
-        ease: true,
-        repeat: 0,
-        duration: 1,
-      }
-    );
-
-
+    }, "-=3");
 
   }, []);
 
   return (
     <header className="App-header container Header">
-      <h5 className="text-second titulo_Header">Hi! I'm</h5>
-      <h1 className="name-main my-name">
-        ·&nbsp;Kristian&nbsp;·&nbsp;Serrano&nbsp;·
-      </h1>
-      <h5 className="text-second subTitulo">Frontend ·· Developer</h5>
+      <HeaderTexto />
       <CTA />
       <div className="perfil-img">
         <div className="hover-show">
